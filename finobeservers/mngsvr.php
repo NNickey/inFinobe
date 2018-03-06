@@ -8,7 +8,7 @@ function cfban($ipaddr){
 	$cfheaders = array(
 		'Content-Type: application/json',
 		'X-Auth-Email: nickoplier@gmail.com',
-		'X-Auth-Key: e669f83af807aa7bf4cc7c68bbce29dbd22b8'
+		'X-Auth-Key: e669f83af807aa7bf48'
 	);
 	$data = array(
 		'mode' => 'block',
@@ -35,7 +35,7 @@ function cfban($ipaddr){
 	}
 }
 
-if (!startsWith($_SERVER['REMOTE_ADDR'],"192.168.88.") && $_SERVER['REMOTE_ADDR']!="127.0.0.1" && $_SERVER["HTTP_CF_CONNECTING_IP"]!="69.145.68.194"){
+if (!startsWith($_SERVER['REMOTE_ADDR'],"192.168.88.") && $_SERVER['REMOTE_ADDR']!="127.0.0.1" && $_SERVER["HTTP_CF_CONNECTING_IP"]!="**.145.68.194"){
 	echo "Your IP is now banned from inF* and your IP has been logged! -- ";
 	echo $_SERVER["HTTP_CF_CONNECTING_IP"];
 	cfban($_SERVER["HTTP_CF_CONNECTING_IP"]);
@@ -44,7 +44,7 @@ if (!startsWith($_SERVER['REMOTE_ADDR'],"192.168.88.") && $_SERVER['REMOTE_ADDR'
 }
 
 
-$hostip="69.145.68.194"; //69.145.68.194
+$hostip="**.145.68.194"; //**.145.68.194
 
 $keys="slappystoptrying";
 
